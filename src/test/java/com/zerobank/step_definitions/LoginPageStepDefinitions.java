@@ -13,12 +13,12 @@ public class LoginPageStepDefinitions {
 
     @Given("user is already on home page")
     public void user_is_already_on_home_page() {
-        loginPage.signin();
+        loginPage.openUrl();
     }
 
     @When("user enters {string} and {string} and clicks Sign in button")
-    public void user_enters_and_and_clicks_Sign_in_button() {
-        loginPage.login();
+    public void user_enters_and_and_clicks_Sign_in_button(String username, String password) {
+        loginPage.login(username, password);
 
     }
 

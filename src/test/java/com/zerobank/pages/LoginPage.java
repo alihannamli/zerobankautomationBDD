@@ -35,18 +35,16 @@ public class LoginPage extends PageBase{
     @FindBy(xpath = "//div[contains(text(), 'Login and/or')]")
     public WebElement errorMessage;
 
-    public void signin(){
+    public void openUrl(){
         Driver.get().get(ConfigurationReader.get("url"));
         Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        signinButton.click();
-
     }
 
-    public void login() {
-        this.username.sendKeys(ConfigurationReader.get("username"));
+    public void login(String username, String password) {
+        signinButton.click();
+        this.username.sendKeys(username);
         this.password.sendKeys(ConfigurationReader.get("password"));
         submitButton.click();
-        BrowserUtils.waitForPageToLoad(5);
     }
 
     public boolean verifyAccountSummaryPageisDisplayed(){
@@ -54,9 +52,15 @@ public class LoginPage extends PageBase{
         String expectedTitle = "Zero - Account Summary";
         String actualTitle = Driver.get().getTitle();
         Assert.assertEquals("Title not matched",expectedTitle, actualTitle);
-
         boolean verification = expectedTitle.equals(actualTitle);
         return verification;
+    }
+
+    public boolean verifyTroubleMessageDisplayed(){
+        return troubleMessage.isDisplayed();
+    }
+    public boolean verifyErrorMessageDisplayed(){
+        return errorMessage.isDisplayed();
     }
 
 }
