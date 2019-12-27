@@ -1,8 +1,6 @@
 package com.zerobank.pages;
 
-import com.zerobank.utilities.BrowserUtils;
 import com.zerobank.utilities.Driver;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -10,64 +8,39 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PageBase {
 
-    public PageBase() {
-        PageFactory.initElements(Driver.get(), this);
-    }
-
     @FindBy(css = ".brand")
-        @CacheLookup
-        public WebElement brandLogo; // It stands for the bank logo on all pages
+    @CacheLookup
+    public WebElement brandLogo;
 
-        @FindBy(id = "search")
-        public WebElement searchBar;
+    @FindBy(id = "searchTerm")
+    public WebElement searchBar;
 
-        @FindBy(xpath = "//li[@class=\"dropdown\"][1]")   // #xyz ==> div[id='xyz']
-        @CacheLookup
-        public WebElement settingsButton;
+    @FindBy(xpath = "//li[@class='dropdown'][1]")
+    public WebElement settings;
 
-        @FindBy(xpath = "//li[@class=\"dropdown\"][2]")
-        public WebElement usernameBar;
+    @FindBy(xpath = "//li[@class='dropdown'][2]")
+    public WebElement profile;
 
-        @FindBy(id = "logout_link")
-        public WebElement logoutButton;
+    @FindBy(id = "account_summary_tab")
+    public WebElement accountSummaryTab;
 
-        @FindBy(xpath = "//a[text()='Account Summary']")
-        public WebElement accountSummaryTab;
+    @FindBy(id = "account_activity_tab")
+    public WebElement accountActivityTab;
 
-        @FindBy(xpath = "//a[text()='Account Activity']")
-        public WebElement accountActivityTab;
+    @FindBy(id = "transfer_funds_tab")
+    public WebElement transferFundsTab;
 
-        @FindBy(xpath = "//a[text()='Transfer Funds']")
-        public WebElement transferFundsTab;
+    @FindBy(id = "pay_bills_tab")
+    public WebElement payBillsTab;
 
-        @FindBy(xpath = "//a[text()='Pay Bills']")
-        public WebElement payBillsTab;
+    @FindBy(id = "money_map_tab")
+    public WebElement moneyMapTab;
 
+    @FindBy(id = "online_statements_tab")
+    public WebElement onlineStatementsTab;
 
-        public boolean verifyLogoDislayed() {
-            return brandLogo.isDisplayed();
-        }
-
-        public boolean verifySearchBarDisplayed() {
-            return searchBar.isEnabled();
-        }
-
-        public void logout() {
-            usernameBar.click();
-            BrowserUtils.waitForClickablility(logoutButton,10);
-            logoutButton.click();
-        }
-
-
-        public String getUsername() {
-            BrowserUtils.waitForVisibility(usernameBar, 5);
-            return usernameBar.getText();
-        }
-
-        public void navigateTo(String tab){
-
-            Driver.get().findElement(By.xpath("//a[text()='"+tab+"']")).click();
-            // look for shortcut
-        }
+   public PageBase(){
+       PageFactory.initElements(Driver.get(), this);
+   }
 
 }

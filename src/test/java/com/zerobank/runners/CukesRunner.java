@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
         glue = {"/com/zerobank/step_definitions"},
         plugin = {"pretty", "html:target/default-cucumber-reports" ,"json:target/cucumber.json"},
         monochrome = true,
-        dryRun = true,
-        tags = "@login1"
+        dryRun = false,
+        tags = "@AccountActivity"
 
 
 )
