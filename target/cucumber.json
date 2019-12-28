@@ -3,7 +3,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2019-12-27T20:38:46.377Z",
+        "start_timestamp": "2019-12-28T04:32:08.539Z",
         "line": 5,
         "name": "Savings account redirect",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4794044282,
+              "duration": 4200960592,
               "status": "passed"
             },
             "line": 6,
@@ -35,19 +35,25 @@
           },
           {
             "result": {
-              "duration": 1499265,
+              "duration": 280504717,
               "status": "passed"
             },
             "line": 7,
-            "name": "the user clicks on Savings link on the Account Summary page",
+            "name": "the user clicks on \"Savings\" link on the Account Summary page",
             "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_Savings_link_on_the_Account_Summary_page()"
+              "arguments": [
+                {
+                  "val": "\"Savings\"",
+                  "offset": 19
+                }
+              ],
+              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1345762,
+              "duration": 11478283,
               "status": "passed"
             },
             "line": 8,
@@ -59,13 +65,19 @@
           },
           {
             "result": {
-              "duration": 1448512,
+              "duration": 240001670,
               "status": "passed"
             },
             "line": 9,
-            "name": "Account drop down should have Savings selected",
+            "name": "Account drop down should have \"Savings\" selected",
             "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.account_drop_down_should_have_Savings_selected()"
+              "arguments": [
+                {
+                  "val": "\"Savings\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
             },
             "keyword": "And "
           }
@@ -77,7 +89,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-12-27T20:38:51.297Z",
+        "start_timestamp": "2019-12-28T04:32:13.376Z",
         "line": 11,
         "name": "Brokerage account redirect",
         "description": "",
@@ -87,9 +99,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#signin_button\"}\n  (Session info: chrome\u003d79.0.3945.88)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Alihans-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:443:22e2:7346:6d1d%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.1\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/_2/2_fzmn013pz...}, goog:chromeOptions: {debuggerAddress: localhost:50366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 88c6b3abf01778ff951f277eb765af29\n*** Element info: {Using\u003did, value\u003dsignin_button}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\n\tat com.zerobank.pages.LoginPage.login(LoginPage.java:31)\n\tat com.zerobank.step_definitions.AccountActivityNavigationPageStepDefinitions.the_User_Is_Logged_In(AccountActivityNavigationPageStepDefinitions.java:15)\n\tat ✽.the user is logged in \"username\" \"password\"(file:src/test/resources/features/AccountActivityNavigation.feature:12)\n",
-              "duration": 5206089320,
-              "status": "failed"
+              "duration": 2919937578,
+              "status": "passed"
             },
             "line": 12,
             "name": "the user is logged in \"username\" \"password\"",
@@ -110,20 +121,26 @@
           },
           {
             "result": {
-              "duration": 530516,
-              "status": "skipped"
+              "duration": 254394050,
+              "status": "passed"
             },
             "line": 13,
-            "name": "the user clicks on Brokerage link on the Account Summary page",
+            "name": "the user clicks on \"Brokerage\" link on the Account Summary page",
             "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_Brokerage_link_on_the_Account_Summary_page()"
+              "arguments": [
+                {
+                  "val": "\"Brokerage\"",
+                  "offset": 19
+                }
+              ],
+              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 386369,
-              "status": "skipped"
+              "duration": 14613933,
+              "status": "passed"
             },
             "line": 14,
             "name": "the Account Activity page should be displayed",
@@ -134,13 +151,19 @@
           },
           {
             "result": {
-              "duration": 431815,
-              "status": "skipped"
+              "duration": 265956404,
+              "status": "passed"
             },
             "line": 15,
-            "name": "Account drop down should have Brokerage selected",
+            "name": "Account drop down should have \"Brokerage\" selected",
             "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.account_drop_down_should_have_Brokerage_selected()"
+              "arguments": [
+                {
+                  "val": "\"Brokerage\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
             },
             "keyword": "And "
           }
@@ -152,7 +175,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-12-27T20:38:56.533Z",
+        "start_timestamp": "2019-12-28T04:32:16.837Z",
         "line": 17,
         "name": "Checking account redirect",
         "description": "",
@@ -162,9 +185,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#signin_button\"}\n  (Session info: chrome\u003d79.0.3945.88)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Alihans-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:443:22e2:7346:6d1d%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.1\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/_2/2_fzmn013pz...}, goog:chromeOptions: {debuggerAddress: localhost:50366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 88c6b3abf01778ff951f277eb765af29\n*** Element info: {Using\u003did, value\u003dsignin_button}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\n\tat com.zerobank.pages.LoginPage.login(LoginPage.java:31)\n\tat com.zerobank.step_definitions.AccountActivityNavigationPageStepDefinitions.the_User_Is_Logged_In(AccountActivityNavigationPageStepDefinitions.java:15)\n\tat ✽.the user is logged in \"username\" \"password\"(file:src/test/resources/features/AccountActivityNavigation.feature:18)\n",
-              "duration": 5157595373,
-              "status": "failed"
+              "duration": 2575262716,
+              "status": "passed"
             },
             "line": 18,
             "name": "the user is logged in \"username\" \"password\"",
@@ -185,20 +207,26 @@
           },
           {
             "result": {
-              "duration": 814275,
-              "status": "skipped"
+              "duration": 289274435,
+              "status": "passed"
             },
             "line": 19,
-            "name": "the user clicks on Checking link on the Account Summary page",
+            "name": "the user clicks on \"Checking\" link on the Account Summary page",
             "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_Checking_link_on_the_Account_Summary_page()"
+              "arguments": [
+                {
+                  "val": "\"Checking\"",
+                  "offset": 19
+                }
+              ],
+              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 684053,
-              "status": "skipped"
+              "duration": 7238148,
+              "status": "passed"
             },
             "line": 20,
             "name": "the Account Activity page should be displayed",
@@ -209,13 +237,19 @@
           },
           {
             "result": {
-              "duration": 712210,
-              "status": "skipped"
+              "duration": 259512040,
+              "status": "passed"
             },
             "line": 21,
-            "name": "Account drop down should have Checking selected",
+            "name": "Account drop down should have \"Checking\" selected",
             "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.account_drop_down_should_have_Checking_selected()"
+              "arguments": [
+                {
+                  "val": "\"Checking\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
             },
             "keyword": "And "
           }
@@ -227,7 +261,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-12-27T20:39:01.706Z",
+        "start_timestamp": "2019-12-28T04:32:19.976Z",
         "line": 23,
         "name": "Credit Card account redirect",
         "description": "",
@@ -237,9 +271,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#signin_button\"}\n  (Session info: chrome\u003d79.0.3945.88)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Alihans-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:443:22e2:7346:6d1d%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.1\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/_2/2_fzmn013pz...}, goog:chromeOptions: {debuggerAddress: localhost:50366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 88c6b3abf01778ff951f277eb765af29\n*** Element info: {Using\u003did, value\u003dsignin_button}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\n\tat com.zerobank.pages.LoginPage.login(LoginPage.java:31)\n\tat com.zerobank.step_definitions.AccountActivityNavigationPageStepDefinitions.the_User_Is_Logged_In(AccountActivityNavigationPageStepDefinitions.java:15)\n\tat ✽.the user is logged in \"username\" \"password\"(file:src/test/resources/features/AccountActivityNavigation.feature:24)\n",
-              "duration": 5166991047,
-              "status": "failed"
+              "duration": 2669632331,
+              "status": "passed"
             },
             "line": 24,
             "name": "the user is logged in \"username\" \"password\"",
@@ -260,20 +293,26 @@
           },
           {
             "result": {
-              "duration": 610590,
-              "status": "skipped"
+              "duration": 281871767,
+              "status": "passed"
             },
             "line": 25,
-            "name": "the user clicks on Credit card link on the Account Summary page",
+            "name": "the user clicks on \"Credit Card\" link on the Account Summary page",
             "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_Credit_card_link_on_the_Account_Summary_page()"
+              "arguments": [
+                {
+                  "val": "\"Credit Card\"",
+                  "offset": 19
+                }
+              ],
+              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 810327,
-              "status": "skipped"
+              "duration": 10950157,
+              "status": "passed"
             },
             "line": 26,
             "name": "the Account Activity page should be displayed",
@@ -284,13 +323,19 @@
           },
           {
             "result": {
-              "duration": 359727,
-              "status": "skipped"
+              "duration": 248964908,
+              "status": "passed"
             },
             "line": 27,
-            "name": "Account drop down should have Credit Card selected",
+            "name": "Account drop down should have \"Credit Card\" selected",
             "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.account_drop_down_should_have_Credit_Card_selected()"
+              "arguments": [
+                {
+                  "val": "\"Credit Card\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
             },
             "keyword": "And "
           }
@@ -302,7 +347,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-12-27T20:39:06.887Z",
+        "start_timestamp": "2019-12-28T04:32:23.191Z",
         "line": 29,
         "name": "Loan account redirect",
         "description": "",
@@ -312,9 +357,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#signin_button\"}\n  (Session info: chrome\u003d79.0.3945.88)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Alihans-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:443:22e2:7346:6d1d%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.1\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/_2/2_fzmn013pz...}, goog:chromeOptions: {debuggerAddress: localhost:50366}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 88c6b3abf01778ff951f277eb765af29\n*** Element info: {Using\u003did, value\u003dsignin_button}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\n\tat com.zerobank.pages.LoginPage.login(LoginPage.java:31)\n\tat com.zerobank.step_definitions.AccountActivityNavigationPageStepDefinitions.the_User_Is_Logged_In(AccountActivityNavigationPageStepDefinitions.java:15)\n\tat ✽.the user is logged in \"username\" \"password\"(file:src/test/resources/features/AccountActivityNavigation.feature:30)\n",
-              "duration": 5160737897,
-              "status": "failed"
+              "duration": 2534599715,
+              "status": "passed"
             },
             "line": 30,
             "name": "the user is logged in \"username\" \"password\"",
@@ -335,20 +379,26 @@
           },
           {
             "result": {
-              "duration": 386872,
-              "status": "skipped"
+              "duration": 1001039848,
+              "status": "passed"
             },
             "line": 31,
-            "name": "the user clicks on Loan link on the Account Summary page",
+            "name": "the user clicks on \"Loan\" link on the Account Summary page",
             "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_Loan_link_on_the_Account_Summary_page()"
+              "arguments": [
+                {
+                  "val": "\"Loan\"",
+                  "offset": 19
+                }
+              ],
+              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 370298,
-              "status": "skipped"
+              "duration": 7043173,
+              "status": "passed"
             },
             "line": 32,
             "name": "the Account Activity page should be displayed",
@@ -359,13 +409,19 @@
           },
           {
             "result": {
-              "duration": 370887,
-              "status": "skipped"
+              "duration": 246176568,
+              "status": "passed"
             },
             "line": 33,
-            "name": "Account drop down should have Loan selected",
+            "name": "Account drop down should have \"Loan\" selected",
             "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.account_drop_down_should_have_Loan_selected()"
+              "arguments": [
+                {
+                  "val": "\"Loan\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
             },
             "keyword": "And "
           }

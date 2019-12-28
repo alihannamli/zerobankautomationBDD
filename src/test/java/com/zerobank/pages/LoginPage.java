@@ -27,13 +27,20 @@ public class LoginPage extends PageBase{
         Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
-    public void login(){
+    public void loginPositive(String username, String password){
         singinButton.click();
-        loginBar.sendKeys(ConfigurationReader.get("username"));
-        passwordBar.sendKeys(ConfigurationReader.get("password"));
+        loginBar.sendKeys(username);
+        passwordBar.sendKeys(password);
         signinSubmit.click();
-
     }
+
+    public void loginNegative(){
+        singinButton.click();
+        loginBar.sendKeys("");
+        passwordBar.sendKeys("");
+        signinSubmit.click();
+    }
+
 
 
     public LoginPage(){
