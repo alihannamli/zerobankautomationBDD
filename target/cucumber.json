@@ -3,7 +3,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2019-12-28T04:32:08.539Z",
+        "start_timestamp": "2019-12-28T04:55:21.917Z",
         "line": 5,
         "name": "Savings account redirect",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4200960592,
+              "duration": 5082381754,
               "status": "passed"
             },
             "line": 6,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 280504717,
+              "duration": 277202284,
               "status": "passed"
             },
             "line": 7,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 11478283,
+              "duration": 15162318,
               "status": "passed"
             },
             "line": 8,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 240001670,
+              "duration": 297007471,
               "status": "passed"
             },
             "line": 9,
@@ -89,7 +89,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-12-28T04:32:13.376Z",
+        "start_timestamp": "2019-12-28T04:55:27.682Z",
         "line": 11,
         "name": "Brokerage account redirect",
         "description": "",
@@ -99,7 +99,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2919937578,
+              "duration": 2884955248,
               "status": "passed"
             },
             "line": 12,
@@ -121,7 +121,7 @@
           },
           {
             "result": {
-              "duration": 254394050,
+              "duration": 372816376,
               "status": "passed"
             },
             "line": 13,
@@ -139,7 +139,7 @@
           },
           {
             "result": {
-              "duration": 14613933,
+              "duration": 9695742,
               "status": "passed"
             },
             "line": 14,
@@ -151,7 +151,7 @@
           },
           {
             "result": {
-              "duration": 265956404,
+              "duration": 272493900,
               "status": "passed"
             },
             "line": 15,
@@ -175,7 +175,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-12-28T04:32:16.837Z",
+        "start_timestamp": "2019-12-28T04:55:31.231Z",
         "line": 17,
         "name": "Checking account redirect",
         "description": "",
@@ -185,7 +185,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2575262716,
+              "duration": 2631832259,
               "status": "passed"
             },
             "line": 18,
@@ -207,7 +207,7 @@
           },
           {
             "result": {
-              "duration": 289274435,
+              "duration": 305440566,
               "status": "passed"
             },
             "line": 19,
@@ -225,7 +225,7 @@
           },
           {
             "result": {
-              "duration": 7238148,
+              "duration": 7750127,
               "status": "passed"
             },
             "line": 20,
@@ -237,7 +237,7 @@
           },
           {
             "result": {
-              "duration": 259512040,
+              "duration": 253466342,
               "status": "passed"
             },
             "line": 21,
@@ -261,7 +261,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-12-28T04:32:19.976Z",
+        "start_timestamp": "2019-12-28T04:55:34.437Z",
         "line": 23,
         "name": "Credit Card account redirect",
         "description": "",
@@ -271,7 +271,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2669632331,
+              "duration": 2659429093,
               "status": "passed"
             },
             "line": 24,
@@ -293,7 +293,7 @@
           },
           {
             "result": {
-              "duration": 281871767,
+              "duration": 300736003,
               "status": "passed"
             },
             "line": 25,
@@ -311,7 +311,7 @@
           },
           {
             "result": {
-              "duration": 10950157,
+              "duration": 12568492,
               "status": "passed"
             },
             "line": 26,
@@ -323,7 +323,7 @@
           },
           {
             "result": {
-              "duration": 248964908,
+              "duration": 276383642,
               "status": "passed"
             },
             "line": 27,
@@ -347,7 +347,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-12-28T04:32:23.191Z",
+        "start_timestamp": "2019-12-28T04:55:37.690Z",
         "line": 29,
         "name": "Loan account redirect",
         "description": "",
@@ -357,7 +357,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2534599715,
+              "duration": 2619475819,
               "status": "passed"
             },
             "line": 30,
@@ -379,7 +379,7 @@
           },
           {
             "result": {
-              "duration": 1001039848,
+              "duration": 1009525845,
               "status": "passed"
             },
             "line": 31,
@@ -397,7 +397,7 @@
           },
           {
             "result": {
-              "duration": 7043173,
+              "duration": 7154067,
               "status": "passed"
             },
             "line": 32,
@@ -409,7 +409,7 @@
           },
           {
             "result": {
-              "duration": 246176568,
+              "duration": 272541334,
               "status": "passed"
             },
             "line": 33,
