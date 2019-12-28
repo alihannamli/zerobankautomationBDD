@@ -1,262 +1,324 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AccountActivityNavigation.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/FindTransactions.feature");
 formatter.feature({
-  "name": "Navigating to specific accounts in Accounts Activity",
+  "name": "Find Transactions in Account Activity",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@AccountActivity"
+      "name": "@FindActivity"
     }
   ]
 });
 formatter.scenario({
-  "name": "Savings account redirect",
+  "name": "Search date range",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@AccountActivity"
+      "name": "@FindActivity"
     }
   ]
 });
 formatter.step({
-  "name": "the user is logged in \"username\" \"password\"",
+  "name": "the user accesses the Find Transactions tab",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_User_Is_Logged_In(String,String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user clicks on \"Savings\" link on the Account Summary page",
+  "name": "the user enters date range from \"2012-09-01\" to \"2012-09-06\"",
   "keyword": "When "
 });
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the Account Activity page should be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Account drop down should have \"Savings\" selected",
+  "name": "clicks search",
   "keyword": "And "
 });
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should only show transactions dates between \"2012-09-01\" to \"2012-09-06\"",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the results should be sorted by most recent date",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the user enters date range from \"2012-09-02\" to \"2012-09-06\"",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "clicks search",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should only show transactions dates between \"2012-09-02\" to \"2012-09-06\"",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the results table should only not contain transactions dated \"2012-09-01\"",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.scenario({
-  "name": "Brokerage account redirect",
+  "name": "Search description",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@AccountActivity"
+      "name": "@FindActivity"
     }
   ]
 });
 formatter.step({
-  "name": "the user is logged in \"username\" \"password\"",
+  "name": "the user accesses the Find Transactions tab",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_User_Is_Logged_In(String,String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user clicks on \"Brokerage\" link on the Account Summary page",
+  "name": "the user enters description \"ONLINE\"",
   "keyword": "When "
 });
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the Account Activity page should be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Account drop down should have \"Brokerage\" selected",
+  "name": "clicks search",
   "keyword": "And "
 });
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should only show descriptions containing \"ONLINE\"",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the user enters description \"OFFICE\"",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "clicks search",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should only show descriptions containing \"OFFICE\"",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should not show descriptions containing \"OFFICE\"",
+  "keyword": "But "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.scenario({
-  "name": "Checking account redirect",
+  "name": "Search description case insensitive",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@AccountActivity"
+      "name": "@FindActivity"
     }
   ]
 });
 formatter.step({
-  "name": "the user is logged in \"username\" \"password\"",
+  "name": "the user accesses the Find Transactions tab",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_User_Is_Logged_In(String,String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user clicks on \"Checking\" link on the Account Summary page",
+  "name": "the user enters description \"ONLINE\"",
   "keyword": "When "
 });
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the Account Activity page should be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Account drop down should have \"Checking\" selected",
+  "name": "clicks search",
   "keyword": "And "
 });
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should only show descriptions containing \"ONLINE\"",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the user enters description \"online\"",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "clicks search",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should only show descriptions containing \"ONLINE\"",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.scenario({
-  "name": "Credit Card account redirect",
+  "name": "Type",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@AccountActivity"
+      "name": "@FindActivity"
     }
   ]
 });
 formatter.step({
-  "name": "the user is logged in \"username\" \"password\"",
+  "name": "the user accesses the Find Transactions tab",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_User_Is_Logged_In(String,String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user clicks on \"Credit Card\" link on the Account Summary page",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the Account Activity page should be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Account drop down should have \"Credit Card\" selected",
+  "name": "clicks search",
   "keyword": "And "
 });
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Loan account redirect",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@AccountActivity"
-    }
-  ]
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user is logged in \"username\" \"password\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_User_Is_Logged_In(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user clicks on \"Loan\" link on the Account Summary page",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the Account Activity page should be displayed",
+  "name": "results table should show at least one result under Deposit",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "Account drop down should have \"Loan\" selected",
-  "keyword": "And "
+  "name": "results table should show at least one result under Withdrawal",
+  "keyword": "Then "
 });
-formatter.match({
-  "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user selects type \"Deposit\"",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should show at least one result under Deposit",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should show no result under Withdrawal",
+  "keyword": "But "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user selects type \"Withdrawal\"",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should show at least one result under Withdrawal",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "results table should show no result under Deposit",
+  "keyword": "But "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });

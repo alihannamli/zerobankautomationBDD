@@ -1,446 +1,386 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2019-12-28T04:55:21.917Z",
-        "line": 5,
-        "name": "Savings account redirect",
+        "start_timestamp": "2019-12-28T05:35:00.082Z",
+        "line": 3,
+        "name": "Search date range",
         "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;savings-account-redirect",
+        "id": "find-transactions-in-account-activity;search-date-range",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5082381754,
-              "status": "passed"
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "the user accesses the Find Transactions tab",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
             "line": 6,
-            "name": "the user is logged in \"username\" \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"username\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 33
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.the_User_Is_Logged_In(String,String)"
-            },
-            "keyword": "Given "
+            "name": "the user enters date range from \"2012-09-01\" to \"2012-09-06\"",
+            "match": {},
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 277202284,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 7,
-            "name": "the user clicks on \"Savings\" link on the Account Summary page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Savings\"",
-                  "offset": 19
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
-            },
-            "keyword": "When "
+            "name": "clicks search",
+            "match": {},
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 15162318,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 8,
-            "name": "the Account Activity page should be displayed",
-            "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-            },
+            "name": "results table should only show transactions dates between \"2012-09-01\" to \"2012-09-06\"",
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 297007471,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 9,
-            "name": "Account drop down should have \"Savings\" selected",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Savings\"",
-                  "offset": 30
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
-            },
+            "name": "the results should be sorted by most recent date",
+            "match": {},
             "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@AccountActivity"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-12-28T04:55:27.682Z",
-        "line": 11,
-        "name": "Brokerage account redirect",
-        "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;brokerage-account-redirect",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+          },
           {
             "result": {
-              "duration": 2884955248,
-              "status": "passed"
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "the user enters date range from \"2012-09-02\" to \"2012-09-06\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "clicks search",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
             "line": 12,
-            "name": "the user is logged in \"username\" \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"username\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 33
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.the_User_Is_Logged_In(String,String)"
-            },
-            "keyword": "Given "
+            "name": "results table should only show transactions dates between \"2012-09-02\" to \"2012-09-06\"",
+            "match": {},
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 372816376,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 13,
-            "name": "the user clicks on \"Brokerage\" link on the Account Summary page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Brokerage\"",
-                  "offset": 19
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 9695742,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "the Account Activity page should be displayed",
-            "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 272493900,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Account drop down should have \"Brokerage\" selected",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Brokerage\"",
-                  "offset": 30
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
-            },
+            "name": "the results table should only not contain transactions dated \"2012-09-01\"",
+            "match": {},
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@AccountActivity"
+            "name": "@FindActivity"
           }
         ]
       },
       {
-        "start_timestamp": "2019-12-28T04:55:31.231Z",
-        "line": 17,
-        "name": "Checking account redirect",
+        "start_timestamp": "2019-12-28T05:35:00.228Z",
+        "line": 15,
+        "name": "Search description",
         "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;checking-account-redirect",
+        "id": "find-transactions-in-account-activity;search-description",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2631832259,
-              "status": "passed"
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "the user accesses the Find Transactions tab",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "the user enters description \"ONLINE\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
             "line": 18,
-            "name": "the user is logged in \"username\" \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"username\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 33
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.the_User_Is_Logged_In(String,String)"
-            },
-            "keyword": "Given "
+            "name": "clicks search",
+            "match": {},
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 305440566,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 19,
-            "name": "the user clicks on \"Checking\" link on the Account Summary page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Checking\"",
-                  "offset": 19
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
-            },
-            "keyword": "When "
+            "name": "results table should only show descriptions containing \"ONLINE\"",
+            "match": {},
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 7750127,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 20,
-            "name": "the Account Activity page should be displayed",
-            "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-            },
-            "keyword": "Then "
+            "name": "the user enters description \"OFFICE\"",
+            "match": {},
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 253466342,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 21,
-            "name": "Account drop down should have \"Checking\" selected",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Checking\"",
-                  "offset": 30
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
-            },
+            "name": "clicks search",
+            "match": {},
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "results table should only show descriptions containing \"OFFICE\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "results table should not show descriptions containing \"OFFICE\"",
+            "match": {},
+            "keyword": "But "
           }
         ],
         "tags": [
           {
-            "name": "@AccountActivity"
+            "name": "@FindActivity"
           }
         ]
       },
       {
-        "start_timestamp": "2019-12-28T04:55:34.437Z",
-        "line": 23,
-        "name": "Credit Card account redirect",
+        "start_timestamp": "2019-12-28T05:35:00.262Z",
+        "line": 25,
+        "name": "Search description case insensitive",
         "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;credit-card-account-redirect",
+        "id": "find-transactions-in-account-activity;search-description-case-insensitive",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2659429093,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "the user is logged in \"username\" \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"username\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 33
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.the_User_Is_Logged_In(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 300736003,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "the user clicks on \"Credit Card\" link on the Account Summary page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Credit Card\"",
-                  "offset": 19
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 12568492,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 26,
-            "name": "the Account Activity page should be displayed",
-            "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.the_Account_Activity_page_should_be_displayed()"
+            "name": "the user accesses the Find Transactions tab",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
+            "line": 27,
+            "name": "the user enters description \"ONLINE\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "clicks search",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "results table should only show descriptions containing \"ONLINE\"",
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 276383642,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 27,
-            "name": "Account drop down should have \"Credit Card\" selected",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Credit Card\"",
-                  "offset": 30
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
+            "line": 30,
+            "name": "the user enters description \"online\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
+            "line": 31,
+            "name": "clicks search",
+            "match": {},
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 32,
+            "name": "results table should only show descriptions containing \"ONLINE\"",
+            "match": {},
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@AccountActivity"
+            "name": "@FindActivity"
           }
         ]
       },
       {
-        "start_timestamp": "2019-12-28T04:55:37.690Z",
-        "line": 29,
-        "name": "Loan account redirect",
+        "start_timestamp": "2019-12-28T05:35:00.300Z",
+        "line": 34,
+        "name": "Type",
         "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;loan-account-redirect",
+        "id": "find-transactions-in-account-activity;type",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2619475819,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 30,
-            "name": "the user is logged in \"username\" \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"username\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 33
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.the_User_Is_Logged_In(String,String)"
-            },
+            "line": 35,
+            "name": "the user accesses the Find Transactions tab",
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1009525845,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 31,
-            "name": "the user clicks on \"Loan\" link on the Account Summary page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Loan\"",
-                  "offset": 19
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
-            },
-            "keyword": "When "
+            "line": 36,
+            "name": "clicks search",
+            "match": {},
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 7154067,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 32,
-            "name": "the Account Activity page should be displayed",
-            "match": {
-              "location": "AccountActivityNavigationPageStepDefinitions.the_Account_Activity_page_should_be_displayed()"
-            },
+            "line": 37,
+            "name": "results table should show at least one result under Deposit",
+            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 272541334,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 33,
-            "name": "Account drop down should have \"Loan\" selected",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Loan\"",
-                  "offset": 30
-                }
-              ],
-              "location": "AccountActivityNavigationPageStepDefinitions.accountDropDownShouldHaveSelected(String)"
+            "line": 38,
+            "name": "results table should show at least one result under Withdrawal",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
-            "keyword": "And "
+            "line": 39,
+            "name": "user selects type \"Deposit\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 40,
+            "name": "results table should show at least one result under Deposit",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 41,
+            "name": "results table should show no result under Withdrawal",
+            "match": {},
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 42,
+            "name": "user selects type \"Withdrawal\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 43,
+            "name": "results table should show at least one result under Withdrawal",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 44,
+            "name": "results table should show no result under Deposit",
+            "match": {},
+            "keyword": "But "
           }
         ],
         "tags": [
           {
-            "name": "@AccountActivity"
+            "name": "@FindActivity"
           }
         ]
       }
     ],
-    "name": "Navigating to specific accounts in Accounts Activity",
+    "name": "Find Transactions in Account Activity",
     "description": "",
-    "id": "navigating-to-specific-accounts-in-accounts-activity",
+    "id": "find-transactions-in-account-activity",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AccountActivityNavigation.feature",
+    "uri": "file:src/test/resources/features/FindTransactions.feature",
     "tags": [
       {
-        "name": "@AccountActivity",
+        "name": "@FindActivity",
         "type": "Tag",
         "location": {
           "line": 1,
